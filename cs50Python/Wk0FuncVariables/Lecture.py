@@ -6,11 +6,11 @@ print("Hello ", end="")
 print(name)
 
 # Separater
-print("Hello," , name, sep = ":::")
+print("Hello,", name, sep=":::")
 
 '''String Methods'''
 # Remove whitespaces and capitalise user's name
-first, last = name.split(" ") #will return a sequence of values
+first, last = name.split(" ")  # will return a sequence of values
 
 # Formatted
 print(f'Fromatted: Hello, {first}')
@@ -29,7 +29,6 @@ Parameters: positional parameters,
 named parameters -> sep, end <- Optional
 '''
 
-
 '''
 Syntax Error: 
 Run the program without Terminal Window -> 
@@ -40,3 +39,23 @@ Graphical User Interface.
 '''Escape Characters'''
 print('Hello, \"dog\"')
 
+'''int Operations + - * / %'''
+
+'''float
+Decimal Number
+Square bracket means optional. 
+
+round(number[, digits])
+'''
+
+'''Functions
+'''
+
+
+def hello(to='world'): #<-- this one is default value
+    print("hello,", to)
+
+
+name1 = input("Function Name: ")
+
+hello(name1)
