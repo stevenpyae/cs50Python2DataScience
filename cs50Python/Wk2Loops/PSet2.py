@@ -48,19 +48,22 @@ def is_valid(s):
     #“… vanity plates may contain a maximum of 6 characters (letters or numbers) and a minimum of 2 characters.”
     #
     first_digit_index = 0
+    # loop through each character
     for c in s:
+        # if the char is number, take note of the first number
         if c.isnumeric():
             first_number = c
             break
+        # if nto first_digit_index move up by one
         else:
             first_digit_index+=1
 
-    #Numbers cannot be used in the middle of a plat
+    #Numbers cannot be used in the middle of a plate
     for c in s[first_digit_index:]:
+        #if char between first_digit_index to the end, any char is alphabetic, return false
         if c.isalpha():
             return False
     #All vanity plates must start with at least two letters.”
-
     if 2 <= len(s) <= 6 and s[0:2].isalpha():
         #Edge case where its all ALPHA
         if s.isalpha():
